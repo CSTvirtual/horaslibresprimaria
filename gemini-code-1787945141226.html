@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Horas Libres - Primaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portal de Horarios y Disponibilidad</h1>
+            <p>Colegio San Tarsicio - Sección Primaria (2026-2027)</p>
+        </header>
+
+        <section class="controls">
+            <label for="subjectSelect">Selecciona la Asignatura / Profesor:</label>
+            <select id="subjectSelect">
+                <option value="">-- Seleccionar Asignatura --</option>
+            </select>
+        </section>
+
+        <section id="statsContainer" class="stats-grid"></section>
+
+        <section id="scheduleContainer" class="schedule-section">
+            <p class="placeholder">Selecciona una asignatura arriba para consultar sus horas libres y ocupadas.</p>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
